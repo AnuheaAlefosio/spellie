@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spellie - Learn to Spell!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff6f61;
+      margin-bottom: 0.5em;
+      text-shadow: 2px 2px #fff;
+    }
+
+    .spellie-box {
+      background-color: #fffbe6;
+      border: 5px dashed #ffcc00;
+      border-radius: 30px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+
+    .start-button {
+      margin-top: 30px;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .start-button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+
+    .emoji {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <audio id="background-music" autoplay loop>
+    <source src="bgnusic.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="spellie-box">
+    <div class="emoji">🅰️🧠🎉</div>
+    <h1>Welcome to Spellie!</h1>
+    <p>Let’s have fun learning how to spell!</p>
+    <button class="start-button" onclick="startGame()">Start</button>
+    <button class="start-button" onclick="music.play()">music</button>
+  </div>
+
+  <script>
+
+      var music = document.getElementById("background-music");
+
+    function startGame() {
+      window.open("https://anuheaalefosio.github.io/csp.webpage/anime.html", "_blank");
+    }
+  </script>
+</body>
+</html>
+
